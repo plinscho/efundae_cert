@@ -1,0 +1,442 @@
+/* =================================
+   CSS RESPONSIVE - TUTORIAL INTERACTIVO
+   ================================= */
+
+/* Reset básico */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	min-height: 100vh;
+}
+
+/* =================================
+   NAVEGACIÓN RESPONSIVA
+   ================================= */
+.nav-menu ul {
+	display: flex;
+	list-style: none;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 1rem;
+	margin: 0;
+}
+
+.nav-item {
+	margin-right: 2rem;
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+	background: #667eea;
+	color: white;
+}
+
+/* =================================
+   HEADER
+   ================================= */
+.header {
+	text-align: center;
+	padding: 2rem;
+	color: white;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.subtitle {
+	font-size: 1.2rem;
+	opacity: 0.9;
+}
+
+/* =================================
+   CONTENIDO PRINCIPAL
+   ================================= */
+.main-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.demo-section {
+	background: white;
+	margin: 2rem 0;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.demo-section h2 {
+	background: #667eea;
+	color: white;
+	padding: 1rem;
+	margin: 0;
+}
+
+.concept-box {
+	padding: 1.5rem;
+}
+
+/* =================================
+   DEMOSTRACIÓN 1: CAJAS RESPONSIVAS
+   ================================= */
+.responsive-demo {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.box {
+	padding: 1rem;
+	text-align: center;
+	border-radius: 8px;
+	font-weight: bold;
+	color: white;
+}
+
+.box.fixed {
+	width: 300px;
+	background: #e74c3c;
+}
+
+.box.responsive {
+	flex: 1;
+	background: #27ae60;
+}
+
+/* =================================
+   DEMOSTRACIÓN 2: INDICADOR DE BREAKPOINTS
+   ================================= */
+.breakpoint-list {
+	margin: 1rem 0;
+	padding-left: 1.5rem;
+}
+
+.breakpoint-list li {
+	margin: 0.5rem 0;
+}
+
+.breakpoint-indicator {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f8f9fa;
+	padding: 1rem;
+	border-radius: 8px;
+	margin-top: 1rem;
+}
+
+.current-size {
+	font-weight: bold;
+	color: #667eea;
+}
+
+.device-type {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #27ae60;
+}
+
+/* =================================
+   DEMOSTRACIÓN 3: GRID RESPONSIVO
+   ================================= */
+.grid-demo {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.grid-item {
+	background: #3498db;
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+/* =================================
+   DEMOSTRACIÓN 4: UNIDADES
+   ================================= */
+.units-demo {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.unit-box {
+	padding: 1rem;
+	text-align: center;
+	border-radius: 8px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.unit-box.px {
+	width: 200px;
+	background: #e74c3c;
+}
+
+.unit-box.percent {
+	width: 50%;
+	background: #f39c12;
+}
+
+.unit-box.vw {
+	width: 30vw;
+	background: #9b59b6;
+}
+
+.unit-box.rem {
+	width: 10rem;
+	background: #1abc9c;
+}
+
+/* =================================
+   DEMOSTRACIÓN 5: IMÁGENES
+   ================================= */
+.image-demo {
+	display: flex;
+	gap: 2rem;
+	margin-top: 1rem;
+}
+
+.image-container {
+	flex: 1;
+	text-align: center;
+}
+
+.fake-image {
+	padding: 3rem 1rem;
+	color: white;
+	font-weight: bold;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+.fixed-image {
+	width: 400px;
+	background: #e74c3c;
+}
+
+.responsive-image {
+	width: 100%;
+	max-width: 400px;
+	background: #27ae60;
+}
+
+/* =================================
+   DEMOSTRACIÓN 6: FLEXBOX
+   ================================= */
+.flex-demo {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+.flex-item {
+	flex: 1;
+	background: #34495e;
+	color: white;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 8px;
+	font-weight: bold;
+}
+
+/* =================================
+   FOOTER
+   ================================= */
+.footer {
+	text-align: center;
+	padding: 2rem;
+	color: white;
+	font-size: 1.1rem;
+}
+
+/* =================================
+   MEDIA QUERIES - TABLET (768px y menos)
+   ================================= */
+@media screen and (max-width: 768px) {
+	.header h1 {
+		font-size: 2rem;
+	}
+	
+	.subtitle {
+		font-size: 1rem;
+	}
+	
+	/* Navegación se vuelve vertical */
+	.nav-menu ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.nav-item {
+		margin: 0.5rem 0;
+	}
+	
+	/* Grid se convierte en 2 columnas */
+	.grid-demo {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	/* Unidades se apilan */
+	.units-demo {
+		flex-direction: column;
+	}
+	
+	.unit-box.percent {
+		width: 100%;
+	}
+	
+	/* Imágenes se apilan */
+	.image-demo {
+		flex-direction: column;
+	}
+	
+	/* Flexbox se apila */
+	.flex-demo {
+		flex-direction: column;
+	}
+	
+	/* Cajas responsivas se apilan */
+	.responsive-demo {
+		flex-direction: column;
+	}
+	
+	.box.fixed {
+		width: 100%;
+	}
+}
+
+/* =================================
+   MEDIA QUERIES - MOBILE (480px y menos)
+   ================================= */
+@media screen and (max-width: 480px) {
+	.header {
+		padding: 1rem;
+	}
+	
+	.header h1 {
+		font-size: 1.5rem;
+	}
+	
+	.subtitle {
+		font-size: 0.9rem;
+	}
+	
+	.main-content {
+		padding: 0 0.5rem;
+	}
+	
+	.demo-section {
+		margin: 1rem 0;
+	}
+	
+	.concept-box {
+		padding: 1rem;
+	}
+	
+	/* Grid se convierte en 1 columna */
+	.grid-demo {
+		grid-template-columns: 1fr;
+	}
+	
+	/* Navegación más compacta */
+	.nav-menu ul {
+		padding: 0.5rem;
+	}
+	
+	.nav-item a {
+		padding: 0.3rem 0.8rem;
+		font-size: 0.9rem;
+	}
+	
+	/* Breakpoint indicator se apila */
+	.breakpoint-indicator {
+		flex-direction: column;
+		text-align: center;
+		gap: 0.5rem;
+	}
+	
+	/* Elementos flex más pequeños */
+	.flex-item {
+		padding: 1rem;
+	}
+	
+	.grid-item {
+		padding: 1.5rem;
+	}
+	
+	.fake-image {
+		padding: 2rem 1rem;
+	}
+}
+
+/* =================================
+   MEDIA QUERIES - DESKTOP LARGE (1200px+)
+   ================================= */
+@media screen and (min-width: 1200px) {
+	.header h1 {
+		font-size: 3rem;
+	}
+	
+	.subtitle {
+		font-size: 1.4rem;
+	}
+	
+	.demo-section {
+		margin: 3rem 0;
+	}
+	
+	.concept-box {
+		padding: 2rem;
+	}
+}
+
+/* =================================
+   ANIMACIONES PARA TRANSICIONES
+   ================================= */
+.grid-item,
+.flex-item,
+.box,
+.fake-image,
+.unit-box {
+	transition: all 0.3s ease;
+}
+
+/* Efectos hover para interactividad */
+.grid-item:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flex-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+	transform: scale(1.02);
+}

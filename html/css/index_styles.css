@@ -1,0 +1,76 @@
+
+a:hover{
+	color: red;
+}
+
+p {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	alignment-baseline: central;
+	color: black;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+p:hover {
+	background-color: violet;
+}
+
+.nav-menu {
+	padding: 10px;
+	color: black;
+	background-color: antiquewhite;
+}
+
+.nav-menu ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+}
+
+.nav-menu li {
+	list-style-type: none;
+	padding: 5px;
+	margin-right: 20px;
+	color: white;
+	background-color: black;
+	border-radius: 7px;
+}
+
+.nav-menu a {
+	font-family: sans-serif;
+	color: aliceblue;
+	text-decoration: none;
+}
+
+.section {
+	margin: 5px;
+	border-radius: 5px;
+	padding: 20px;
+	background-color: aliceblue;
+}
+
+.container {
+	padding: 10px;
+	border-style: solid;
+	border-color: black;
+	border-width: 5px;
+	background-color: aquamarine;
+	border-radius: 20px;
+	font-size: 20px;
+}
+
+.form-name{
+	
+}
+
+footer {
+	text-align: center;
+
+}

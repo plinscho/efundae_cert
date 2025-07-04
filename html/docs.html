@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS Responsive - Tutorial Interactivo</title>
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	<nav class="nav-menu">
+		<ul>
+			<li class="nav-item"><a href="index.html">HOME</a></li>
+			<li class="nav-item"><a href="">DOCS</a></li>
+		</ul>
+	</nav>
+	
+	<header class="header">
+		<h1>CSS Responsive - Tutorial Interactivo</h1>
+		<p class="subtitle">Redimensiona la ventana para ver los efectos</p>
+	</header>
+
+	<main class="main-content">
+		<!-- Sección 1: Conceptos básicos -->
+		<section class="demo-section">
+			<h2>1. ¿Qué es CSS Responsivo?</h2>
+			<div class="concept-box">
+				<p>El CSS responsivo permite que tu sitio web se adapte a diferentes tamaños de pantalla automáticamente.</p>
+				<div class="responsive-demo">
+					<div class="box fixed">Caja FIJA (no responsiva)</div>
+					<div class="box responsive">Caja RESPONSIVA</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección 2: Breakpoints -->
+		<section class="demo-section">
+			<h2>2. Breakpoints (Puntos de quiebre)</h2>
+			<div class="concept-box">
+				<p>Los breakpoints son anchos específicos donde el diseño cambia:</p>
+				<ul class="breakpoint-list">
+					<li><strong>Mobile:</strong> 0-480px</li>
+					<li><strong>Tablet:</strong> 481-768px</li>
+					<li><strong>Desktop:</strong> 769px+</li>
+				</ul>
+				<div class="breakpoint-indicator">
+					<span class="current-size">Tamaño actual: <span id="screen-width"></span>px</span>
+					<span class="device-type" id="device-type">Desktop</span>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección 3: Media Queries -->
+		<section class="demo-section">
+			<h2>3. Media Queries en Acción</h2>
+			<div class="concept-box">
+				<p>Observa cómo cambian estos elementos según el tamaño:</p>
+				<div class="grid-demo">
+					<div class="grid-item">1</div>
+					<div class="grid-item">2</div>
+					<div class="grid-item">3</div>
+					<div class="grid-item">4</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección 4: Unidades Responsivas -->
+		<section class="demo-section">
+			<h2>4. Unidades Responsivas</h2>
+			<div class="concept-box">
+				<div class="units-demo">
+					<div class="unit-box px">200px (fijo)</div>
+					<div class="unit-box percent">50% (relativo)</div>
+					<div class="unit-box vw">30vw (viewport width)</div>
+					<div class="unit-box rem">10rem (relativo a root)</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección 5: Imágenes Responsivas -->
+		<section class="demo-section">
+			<h2>5. Imágenes Responsivas</h2>
+			<div class="concept-box">
+				<div class="image-demo">
+					<div class="image-container">
+						<div class="fake-image fixed-image">Imagen FIJA 400px</div>
+						<p>No responsiva ❌</p>
+					</div>
+					<div class="image-container">
+						<div class="fake-image responsive-image">Imagen RESPONSIVA</div>
+						<p>Responsiva ✅</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sección 6: Layout Flexbox Responsivo -->
+		<section class="demo-section">
+			<h2>6. Layout Flexbox Responsivo</h2>
+			<div class="concept-box">
+				<div class="flex-demo">
+					<div class="flex-item">Elemento 1</div>
+					<div class="flex-item">Elemento 2</div>
+					<div class="flex-item">Elemento 3</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>Redimensiona la ventana del navegador para ver todos los efectos en acción 🚀</p>
+	</footer>
+
+	<script>
+		// Script para mostrar el ancho actual de la pantalla
+		function updateScreenInfo() {
+			const width = window.innerWidth;
+			document.getElementById('screen-width').textContent = width;
+			
+			let deviceType = '';
+			if (width <= 480) {
+				deviceType = 'Mobile 📱';
+			} else if (width <= 768) {
+				deviceType = 'Tablet 📋';
+			} else {
+				deviceType = 'Desktop 🖥️';
+			}
+			document.getElementById('device-type').textContent = deviceType;
+		}
+
+		window.addEventListener('resize', updateScreenInfo);
+		updateScreenInfo(); // Llamar al cargar la página
+	</script>
+</body>
+</html>
