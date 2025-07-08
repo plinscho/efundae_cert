@@ -10,3 +10,8 @@
 console.log(document) // we can print the entire dom
 document.body.style.backgroundColor = "#424242"
 document.title = "Caraculo"
+
+const greet = function() {
+	alert("Hi bud!");
+}
+const button = document.getElementById("greet-button").addEventListener("click", greet);
